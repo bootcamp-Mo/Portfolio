@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+:root {
+    --pad-main-h1: 1rem 4rem 1rem 4rem;
+    --font-size-h1: 3rem;
+    --color-light: #fef2e4;
+    --text-color-head: #585b5b;
+    --color-par: #757a7b;
+    --color-light-blue: #6fa1c6;
+}
+
+body {
+    background-color: var(--color-light);
+    font-family: 'Flamenco', cursive;
+}
+
+.header {
+    padding: 20px;
+    font-family: 'Roboto Slab', serif;
+    background-image: url("./images/simple-cloud.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 35vh;
+    padding: 2% 6%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+}
+.header h1 {
+    display: inline-block;
+    font-size: var(--font-size-h1);
+    color: var(--color-light-blue);
+    padding-left: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header h1 .mo {
+    color: #1781ae;
+    font-size: 3.5rem;
+}
+
+.header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right; 
+}
+
+.header div ul {
+    list-style-type: none;
+}
+
+.header div ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: var(--color-par); 
+    text-decoration: none;
+    font-size: 1.75rem;
+}
+
+a:hover {
+    color: #1781ae;
+}
+
+p {
+    font-family: 'Flow Circular', cursive;  
+    color: var(--color-par);
+    font-size: .80rem;
+}
+
+.about, .contact, .work {
+    background-color: #aec1cd;
+    border-radius: 5rem;
+    margin: 50px 20px 0 20px;
+}
+
+
+.main h2 {
+    font-size: 2rem;
+    color: var(--text-color-head);
+
+}
+
+.about {
+    padding: var(--pad-main-h1);
+
+}
+
+.work {
+    padding: var(--pad-main-h1);
+}
+
+.contact {
+    padding: var(--pad-main-h1);
+}
+
+
+.footer {
+    padding: 3rem;
+    text-align: center;
+    clear: both;
+}
+
+.footer h2 {
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    img {
+      width: 50%;
+    }
+    a {
+        font-size: 1.75rem;
+
+    }
+    .header {
+        padding: 2% 0 4% 0;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    img {
+      width: 50%;
+    }
+    a {
+        font-size: 1.50rem;
+    }
+    .header {
+        padding: 2% 0 4% 0;
+    }
+  }
+  @media only screen and (max-width: 750px) {
+    img {
+      width: 50%;
+    }
+    a {
+        font-size: 1.25rem;
+    }
+    .header {
+        padding: 2% 0 8% 0;
+    }
+  }
+  @media only screen and (max-width: 677px) {
+    img {
+      width: 50%;
+    }
+    a {
+        font-size: 1rem;
+    }
+    .header {
+        padding: 2% 0 10% 0;
+    }
+  }
