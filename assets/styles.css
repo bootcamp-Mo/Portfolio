@@ -63,14 +63,32 @@ body {
     display: inline-block;
     margin-left: 25px;
 }
+.bird{
+    position: absolute;
+    animation: move-diagonally 15s linear infinite;
+}
 
-a {
+@keyframes move-diagonally {
+    from {
+      transform: translate(0, -200px);
+    }
+    to {
+      transform: translate(2000px, -400px);
+    }
+  }
+      
+.bird img {
+    width: 8rem;
+    height: auto;
+}
+
+.header a {
     color: var(--color-par); 
     text-decoration: none;
     font-size: 1.75rem;
 }
 
-a:hover {
+.header a:hover {
     color: #1781ae;
 }
 
@@ -80,10 +98,16 @@ p {
     font-size: .80rem;
 }
 
+/* .main {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
 .about, .contact, .work {
     background-color: #aec1cd;
     border-radius: 5rem;
-    margin: 50px 20px 0 20px;
+    margin: 50px 20px 10px 20px;
+
 }
 
 
@@ -95,17 +119,56 @@ p {
 
 .about {
     padding: var(--pad-main-h1);
-
+    width: 35%;
+    height: 600px;
 }
+
+/* .work-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} */
 
 .work {
     padding: var(--pad-main-h1);
+    position: absolute;
+    right: 0;
+    top: 333px;
+    height: 600px;
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.work h2 {
+    position: absolute;
+    top: -5%;
+    left: 10%;
+}
+
+.work a {
+    margin-top: 20%;
+    border: 1px solid black;
+    text-decoration: none;
 }
 
 .contact {
     padding: var(--pad-main-h1);
+    width: 50%;
+    height: 100px;
+    /* background-image: url("./images/bird-scream.gif");
+    background-repeat: no-repeat; */
 }
 
+.contact h2 {
+
+}
+
+.contact img {
+    height: 200px;
+    width: auto;
+}
 
 .footer {
     padding: 3rem;
@@ -128,9 +191,12 @@ p {
     .header {
         padding: 2% 0 4% 0;
     }
+    .banner img {
+        width: 10%;
+    }
   }
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 812px) {
     img {
       width: 50%;
     }
@@ -152,14 +218,17 @@ p {
         padding: 2% 0 8% 0;
     }
   }
-  @media only screen and (max-width: 677px) {
-    img {
-      width: 50%;
-    }
-    a {
-        font-size: 1rem;
-    }
-    .header {
-        padding: 2% 0 10% 0;
-    }
-  }
+
+
+  Good Job! You have a good start here. There are just a 
+  few technical acceptance criteria missing that I have listed 
+  below. 
+  * Application doesn't utilize semantic HTML 
+  * Application's title element is not concise and descriptive 
+  * Application's links do not function correctly 
+  * Repo doesn't have a unique name. 
+  
+  If you need additional help 
+  remember to reach out to your instructional staff and tutors. 
+  They can help you with anything you need regarding this assignment. 
+  Thanks -JR, Central Grader
