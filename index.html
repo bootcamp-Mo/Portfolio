@@ -9,181 +9,84 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@100;300;400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&family=Goblin+One&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Flow+Circular&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Flow+Circular&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:wght@300;700&display=swap" rel="stylesheet">
     <title>Mo's Portfolio</title>
 </head>
 
 
 <body>
-    <header.>
+    <header>
         <div class="hero hero-background">
-            <h1><span class="mo">Mo</span>nique</h1>
+            <a href="#">
+                <h1><span class="mo">Mo</span>nique</h1>
+            </a>
         </div>
-        </div>
-        </header>
+    </header>
 
+    <div class="nav-wrapper">
         <nav>
-            <div class="align-link-right">
+            <div class="nav-links">
                 <ul>
-                    <li>
-                        <a href="#aboutContent">About</a>
-                    </li>
-                    <li>
-                        <a href="#workContent">Work</a>
-                    </li>
-                    <li>
-                        <a href="#contactContent">Contact</a>
-                    </li>
+                    <li><a href="#aboutContent">About</a> </li>
+                    <li><a href="#workContent">Work</a></li>
+                    <li><a href="#contactContent">Contact</a></li>
                 </ul>
+            </div>
         </nav>
+    </div>
+<!-- making a change -->
+    <main>
+        <div class="parent-grid">
+            <div class="wrapper-about-work">
+                <div class="about" id="aboutContent">
+                    <h2>About</h2>
+                    <p class="about-content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                        vitae venenatis ipsum, ut
+                        pulvinar urna. Integer quis pellentesque magna, sit amet consequat nisl. Aenean tincidunt
+                        mauris ut sem accumsan rhoncus. Suspendisse suscipit non neque a sagittis. Aenean
+                        id ex mattis, egestas magna vitae, varius felis. Nulla volutpat, sem volutpat dictum
+                        ultrices,
+                        enim tellus pharetra velit, eu condimentum augue elit ac diam. Mauris interdum id urna ac
+                        semper.
+                    </p>
+                </div>
 
-
-
-        <main>
-            <div class="parent-grid">
-                <div class="wrapper-about-work">
-
-                    <div class="about" id="aboutContent">
-                        <h2>About</h2>
-                        <p class="about-content"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-                            vitae venenatis ipsum, ut
-                            pulvinar urna. Integer quis pellentesque magna, sit amet consequat nisl. Aenean tincidunt
-                            mauris ut sem accumsan rhoncus. Suspendisse suscipit non neque a sagittis. Aenean
-                            id ex mattis, egestas magna vitae, varius felis. Nulla volutpat, sem volutpat dictum
-                            ultrices,
-                            enim tellus pharetra velit, eu condimentum augue elit ac diam. Mauris interdum id urna ac
-                            semper.
-                        </p>
-                    </div>
-
-                    <div class="work work-grid" id="workContent">
-                        <h2>Work</h2>
-                        <div class="container">
-                            <div class="carousel">
-                                <input type="radio" name="slides" id="slides1" title="slide">
-                                <input type="radio" name="slides" id="slides2" title="slide">
-                                <input type="radio" name="slides" id="slides3" title="slide">
-                                <input type="radio" name="slides" id="slides4" title="slide">
-                                <ul class="carousel-slides">
-                                    <li class="carousel-slide">
-                                        <figure>
-                                            <div>
-                                                <img src="./assets/images/cloud-red-shrink.jpg"
-                                                    alt="clouds at sunset warm red">
-                                            </div>
-                                            <figcaption class="carousel-slide-mainText">
-                                                Red Cloud: The setting of the sun
-                                                <span class="carousel-slide-subtext">
-                                                    <a href="#">Project Info</a>
-                                                </span>
-                                            </figcaption>
-                                        </figure>
-                                    </li>
-                                    <li class="carousel-slide">
-                                        <figure>
-                                            <div>
-                                                <img src="./assets/images/cloud-dark-shrink.jpg"
-                                                    alt="clouds at twilight">
-                                            </div>
-                                            <figcaption class="carousel-slide-mainText">
-                                                Twilight Clouds: What crawls out at dusk?
-                                                <span class="carousel-slide-subtext">
-                                                    <a href="#">Project Info</a>
-                                                </span>
-                                            </figcaption>
-                                        </figure>
-                                    </li>
-                                    <li class="carousel-slide">
-                                        <figure>
-                                            <div>
-                                                <img src="./assets/images/cloud-reflection-shrink.jpg"
-                                                    alt="clouds at sunset warm red">
-                                            </div>
-                                            <figcaption class="carousel-slide-mainText">
-                                                Mirrored Clouds: Between the Dimensions
-                                                <span class="carousel-slide-subtext">
-                                                    <a href="#">Project Info</a>
-                                                </span>
-                                            </figcaption>
-                                        </figure>
-                                    </li>
-                                    <li class="carousel-slide">
-                                        <figure>
-                                            <div>
-                                                <img src="./assets/images/cloud-sky-shrink.jpg"
-                                                    alt="clouds at sunset warm red">
-                                            </div>
-                                            <figcaption class="carousel-slide-mainText">
-                                                Clouds Below: How long is the fall?
-                                                <span class="carousel-slide-subtext">
-                                                    <a href="#">Project Info</a>
-                                                </span>
-                                            </figcaption>
-                                        </figure>
-                                    </li>
-                                </ul>
-                                <ul class="carousel-thumbnails">
-                                    <li>
-                                        <label for="slide-1"><img src="./assets/images/cloud-red-300.jpg"
-                                                alt=""></label>
-                                    </li>
-                                    <li>
-                                        <label for="slide-1"><img src="./assets/images/cloud-dark-300.jpg"
-                                                alt=""></label>
-                                    </li>
-                                    <li>
-                                        <label for="slide-1"><img src="./assets/images/cloud-reflection-tiny.jpg"
-                                                alt=""></label>
-                                    </li>
-                                    <li>
-                                        <label for="slide-1"><img src="./assets/images/cloud-sky-300.jpg"
-                                                alt=""></label>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- <div class="inner-grid">
+                <div class="work work-grid" id="workContent">
+                    <h2>Work</h2>
+                    <div class="inner-grid">
                         <div class="wrapper-top-boxes">
                             <a href="#" class="project-box red">
-                                <p>
-                                    This is Lucy.
-                                </p>
-                                <img src="./assets/images/bird-float-small-right.png" alt="Seagull swimming to the right">
-                                
+                                <h4>Sea of Clouds</h4>
+                                <h6> Sky Whale Sight Seeing </h6>
+                                <img src="./assets/images/cloud-sea.jpg" alt="clouds taken from a plane, floor of clouds">
                             </a>
+                        </div>
+                        <div class="wrapper-bottom-boxes">
                             <a href="#" class="project-box green">
-                                <p>
-                                    This is Jim.
-                                </p>
-                                
-                                <img src="./assets/images/bird-float-small-right.png" alt="Seagull swimming to the right">
+                                <h4>Creatures in the Clouds</h4>
+                                <h6>What do you see?</h6>
+                                <img src="./assets/images/cloud-dark-shrink.jpg" alt="wispy ish clouds dark in color">
+                            </a>
+                            <a href="#" class="project-box blue">
+                                <h4>Dimensions Colliding</h4>
+                                <h6>Merging of Worlds</h6>                           
+                                <img src="./assets/images/cloud-reflection-shrink.jpg" alt="clouds reflecting in a lake">
+                            </a>
+                            <a href="#" class="project-box yellow">
+                                <h4>The Red Clouds at Dusk </h4>
+                                <h6> What crawls out at dusk?</h6>
+                                <img src="./assets/images/cloud-red-shrink.jpg" alt="clouds at sunset warm red">
                             </a>
                         </div>
 
-                        <div class="wrapper-bottom-boxes">
-                            <a href="#" class="project-box blue">
-                                <p>
-                                    This is Frank.
-                                </p>
-                                <img src="./assets/images/bird-float-point.png" alt="Seagull swimming with a pointy beak">
-                            </a>
-                            <a href="#" class="project-box yellow">
-                                <p>
-                                    This is Carl.
-                                </p>
-                                <img src="./assets/images/bird-float-big.png" alt="Seagull swimming with a big beak">
-                            </a>
-                        </div>
-                        -->
                     </div>
 
                 </div>
@@ -197,14 +100,14 @@
                     <a href="#">Email</a>
                 </div>
             </div>
-            </div>
-        </main>
+        </div>
+    </main>
 
-        <footer>
-            <div>
-                <h2>Brought to you by Mo's web development </h2>
-            </div>
-        </footer>
+    <footer>
+        <div>
+            <h2>Brought to you by Mo's web development </h2>
+        </div>
+    </footer>
 
 </body>
 
