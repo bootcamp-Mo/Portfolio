@@ -64,6 +64,7 @@ nav {
     justify-content: space-between;
     background-color: var(--color-light);
     padding: 1rem 1.5rem;
+    margin-right: 5rem;
 }
 
 
@@ -115,7 +116,7 @@ main .contact h2 {
 .contact,
 .work {
     border-radius: 1rem;
-    box-shadow: #594c46a7 ;
+    box-shadow: #594c46a7;
     display: block;
     flex-grow: 1;
     flex-shrink: 0;
@@ -252,11 +253,11 @@ main .contact h2 {
     height: 300px;
     width: 100%;
     display: block;
-    border-radius: 0 0 1rem  1rem  ;
+    border-radius: 0 0 1rem 1rem;
 }
 
 .red img {
-    border-radius: 0 0 1rem  1rem;
+    border-radius: 0 0 1rem 1rem;
     width: 100%;
     height: 300px;
 }
@@ -271,6 +272,7 @@ main .contact h2 {
     font-family: var(--heading-font-family);
     color: var(--color-light-blue);
 }
+
 .red h6,
 .green h6,
 .blue h6,
@@ -298,11 +300,12 @@ footer h2 {
     header {
         object-fit: cover;
     }
+
     .wrapper-about-work {
         flex-direction: column;
     }
 
-    .about{
+    .about {
         height: 0;
     }
 
@@ -323,11 +326,14 @@ footer h2 {
         justify-content: space-between;
     }
 
+
     nav a {
         font-size: 70%;
         /* justify-content: space-evenly; */
         display: flex;
         flex-direction: column;
+        margin: 0;
+        padding: 0;
     }
 
     .wrapper-bottom-boxes {
